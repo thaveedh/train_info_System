@@ -1,0 +1,68 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.trainchatbot:backend >----------------------
+[INFO] Building Train Chatbot Backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ backend ---
+[INFO] Deleting D:\Multilingual_train\backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 7 source files with javac [debug release 17] to target\classes
+[INFO] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/NlpService.java: D:\Multilingual_train\backend\src\main\java\com\trainchatbot\service\NlpService.java uses unchecked or unsafe operations.
+[INFO] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/NlpService.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,30] cannot find symbol
+  symbol:   method getTrainNumber()
+  location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,54] cannot find symbol
+  symbol:   method getTrainName()
+  location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,76] cannot find symbol
+  symbol:   method getSource()
+  location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,95] cannot find symbol
+  symbol:   method getDestination()
+  location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,119] cannot find symbol
+  symbol:   method getScheduleTime()
+  location: variable train of type com.trainchatbot.model.TrainData
+[INFO] 5 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.437 s
+[INFO] Finished at: 2026-04-10T08:57:34+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,30] cannot find symbol
+[ERROR]   symbol:   method getTrainNumber()
+[ERROR]   location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,54] cannot find symbol
+[ERROR]   symbol:   method getTrainName()
+[ERROR]   location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,76] cannot find symbol
+[ERROR]   symbol:   method getSource()
+[ERROR]   location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,95] cannot find symbol
+[ERROR]   symbol:   method getDestination()
+[ERROR]   location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] /D:/Multilingual_train/backend/src/main/java/com/trainchatbot/service/ChatService.java:[53,119] cannot find symbol
+[ERROR]   symbol:   method getScheduleTime()
+[ERROR]   location: variable train of type com.trainchatbot.model.TrainData
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

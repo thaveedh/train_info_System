@@ -1,0 +1,16 @@
+Testing https://indian-railway-irctc.p.rapidapi.com/api/trains-search/v1/train/kovai with {}
+Status: 200
+Body: {"meta":{"server_timestamp_ist":"2026-04-10T11:15:57+05:30"},"body":[{"title":"All Trains","trains":[{"trainNumber":"12675","origin":"MGR Chennai Central","destination":"Coimbatore Jn","trainName":"Ko
+----------------------------------------
+Testing https://indian-railway-irctc.p.rapidapi.com/api/v1/searchTrain with {'query': 'kovai'}
+Status: 404
+Body: {"message":"Endpoint '\/api\/v1\/searchTrain' does not exist"}
+----------------------------------------
+Testing https://indian-railway-irctc.p.rapidapi.com/api/v1/getTrainByName with {'name': 'kovai'}
+Status: 404
+Body: {"message":"Endpoint '\/api\/v1\/getTrainByName' does not exist"}
+----------------------------------------
+Testing https://indian-railway-irctc.p.rapidapi.com/api/v1/getTrainSchedule with {'trainNo': 'kovai'}
+Status: 404
+Body: {"message":"Endpoint '\/api\/v1\/getTrainSchedule' does not exist"}
+----------------------------------------
