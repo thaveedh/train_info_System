@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: train_db
+    environment:
+      POSTGRES_USER: train_user
+      POSTGRES_PASSWORD: train_pass
+      POSTGRES_DB: train_db
+    volumes:
+      - ./../database/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./../database/seed_data.sql:/docker-entrypoint-initdb.d/2-seed_data.sql
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./../backend
+    container_name: train_backend
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: train_user
+      DB_PASSWORD: train_pass
+      DB_NAME: train_db
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"

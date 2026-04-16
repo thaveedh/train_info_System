@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,3 +12,44 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Train Info Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Rail Info Assistant</h1>
+
+      <div class="header-controls">
+        <label for="language-select">Language</label>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="ta">Tamil</option>
+          <option value="hi">Hindi</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div id="messages" class="messages"></div>
+    </main>
+
+    <footer class="input-bar">
+      <input id="user-input" type="text" placeholder="Ask something..." autocomplete="off" />
+      <button id="mic-btn" title="Speak">🎤</button>
+      <button id="send-btn" title="Send">➤</button>
+      <button onclick="stopSpeech()">🔇 Stop Voice</button>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+>>>>>>> b38ced8f066361aacfe432bf463e78952f882128
